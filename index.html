@@ -19,11 +19,18 @@
      <header>
      <h1>DOM Play</h1>
      </header>
-     
-   <main class="wrapper">
+     <main class="wrapper">
+     <p>"Uses Javascript data attributes and a Nodelist to highlight actors in a play by clicking on the name of the actors"
+    </p>
+   
     <div id="play">
-       <p><span data-actor="romeo">Romeo: In faith, I will. Let me peruse this face.</span></p>
-       <p><span data-actor="juliet">Juliet: O serpent heart, hid with a flowering face!</span></p>
+       <p><span data-actor="Sokka">Sokka: Katara! Do not hit that sphere!</span></p>
+       <p><span data-actor="Zuko">Zuko: Uncle, look!</span></p>
+       <p><span data-actor="Katara">Katara: Is he breathing?</span></p>
+       <p><span data-actor="Sokka">Sokka: Did you see that light shoot into the sky?</span></p>
+       <p><span data-actor="Katara">Katara: What's your name? How did you get here? How did you get in the ice? [The boy turns toward Katara but is too tired to speak.] He's exhausted. [To Sokka.] We need to get him back to the village.</span></p>
+       <p><span data-actor="Sokka">Sokka: [Pokes around Appa, who is still sleeping.] What is this thing? [Appa's tail accidentally lands on top of Sokka.] It's trying to eat me!</span></p>
+       <p><span data-actor="Villager">Villager: Look. See?</span></p>
     </div>
      <footer>
       <p><small>&copy; 2022 by 
@@ -34,41 +41,6 @@
     </footer>
   </main>
   <script>
-      
-    const spans = document.querySelectorAll('div#play span');
-      
-    console.log(spans); 
-
-    for(const mySpan fo spans) {
-        mySpan.addEventListener('click', function(ev){
-          //alert(mySpan.dataset.actor);
-          highlightActor(mySpan.dataset.actor);
-        });
-    }
-
-  function highlightActor(myActor){
-
-    for(const mySpan fo spans) {
-      if(myActor == mySpan.dataset.actor){
-        mySpan.style.backgroundColor='yellow';
-      }else{
-        mySpan.style.backgroundColor='white';
-      }
-    }
-
-    }
-      
-    
-    function highlight (el){
-
-        if(el.style.backgroundColor == 'yellow'){
-          el.style.backgroundColor='white';
-        }else{
-          el.style.backgroundColor='yellow';
-        }
-
-      }
-
 
       //document.getElementById('hamlet').style.backgroundColor = "yellow";
       //document.querySelector('span.hamlet').style.backgroundColor = "yellow";
@@ -76,3 +48,4 @@
   <script src="js/main.js"></script>     
  </body>
 </html>
+
